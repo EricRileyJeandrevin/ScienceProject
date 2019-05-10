@@ -17,8 +17,11 @@
     <script>
       var canvas = document.getElementById("cardGame");
       var ctx = canvas.getContext("2d");
-      ctx.fillStyle= "#e2faff";
-      ctx.fillRect(0,0,800,400);
+      function drawTitle(){
+        ctx.fillStyle= "#e2faff";
+        ctx.fillRect(0,0,800,400);
+      }
+      drawTitle();
     </script>
   </body>
 </html>
