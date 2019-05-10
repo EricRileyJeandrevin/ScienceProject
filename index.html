@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      canvas {
+      margin-right: 25%;
+      margin-left: 25%;
+      }
+    </style>
   </head>
   <body>
-    <canvas id="cardGame" width="2000" height="400" style="border:10px solid #000000;"></canvas>
+    <canvas id="cardGame" width="800" height="400" style="border:10px solid #000000;"></canvas>
     <script>
       var canvas = document.getElementById("cardGame");
       var ctx = canvas.getContext("2d");
-      ctx.fillRect(0,0,2000,400);
+      ctx.fillRect(0,0,800,400);
     </script>
   </body>
 </html>
