@@ -18,19 +18,14 @@
     <canvas id="cardGame" width="800" height="400" style="b;order:10px solid #000000;"></canvas>
     <img src="gametitle.jpg" id="galaxies"></img>
     <script>
-      $(document).ready(function(){
-
-      $('canvas').fillRect({
-        fillStyle: '#e2aff';
-      });
-
-      });
       var canvas = document.getElementById("cardGame");
       var ctx = canvas.getContext("2d");
+      ctx.fillStyle= "#e2faff";
+      ctx.fillRect(0,0,800,400);
       function drawTitle(){
         var title = document.getElementById("galaxies");
         ctx.drawImage(title, 10, 10);
-      }
+      };
       drawTitle();
     </script>
   </body>
