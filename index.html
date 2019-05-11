@@ -15,7 +15,7 @@
     <script src="https://raw.githubusercontent.com/caleb531/jcanvas/v21.0.1/dist/min/jcanvas.min.js"></script>
   </head>
   <body>
-    <canvas id="cardGame" width="800" height="400" style="b;order:10px solid #000000;"></canvas>
+    <canvas id="cardGame" width="800" height="400" style="border:10px solid #000000;"></canvas>
     <img src="gametitle.png" id="galaxies"></img>
     <script>
       var canvas = document.getElementById("cardGame");
@@ -23,7 +23,7 @@
       ctx.fillStyle= "#e2faff";
       ctx.fillRect(0,0,800,400);
       function drawTitle(){
-        var title = document.getElementById("galaxies");
+        var title = document.getElementById("#galaxies");
         ctx.drawImage(title, 10, 10, 790, 50);
       };
       drawTitle();
