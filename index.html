@@ -15,15 +15,15 @@
   </head>
   <body>
     <canvas id="cardGame" width="800" height="400"></canvas>
-    <img src="gametitle.png" id="galaxies"></img>
     <script>
       var canvas = document.getElementById("cardGame");
       var ctx = canvas.getContext("2d");
       ctx.fillStyle= "#e2faff";
       ctx.fillRect(0,0,800,400);
+      var title = new Image();
+      img.src = "imagetitle.png";
       function drawTitle(){
-        var title = document.getElementById("#galaxies");
-        drawImage(title, 10, 10, 780, 100);
+        ctx.drawImage(title, 10, 10, 780, 100);
       };
       drawTitle();
     </script>
