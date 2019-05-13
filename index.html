@@ -20,9 +20,9 @@
       var ctx = canvas.getContext("2d");
       ctx.fillStyle= "#e2faff";
       ctx.fillRect(0,0,800,400);
-      var title = new Image();
-      img.src = "imagetitle.png";
       function drawTitle(){
+        var title = new Image();
+        title.src = "imagetitle.png";
         ctx.drawImage(title, 10, 10, 780, 100);
       };
       drawTitle();
