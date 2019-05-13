@@ -17,13 +17,27 @@
   <body>
     <canvas id="cardGame" width="800" height="400"></canvas>
     <script>
+      //Button Object
+      var Button = function(config){
+          this.x = config.x || 0;
+          this.y = config.y || 0;
+          this.width = config.width || 150;
+          this.height = config.height || 50;
+          this.label = config.label || "Click";
+      };
+      Button.prototype.draw = function() {
+        ctx.fillStyle= "#541882";
+      };
+      
+      //Canvas Context
       var canvas = document.getElementById("cardGame");
       var ctx = canvas.getContext("2d");
-      ctx.fillStyle= "#e2faff";
-      ctx.fillRect(0,0,800,400);
+      
+      function drawTitle(){
+        ctx.fillStyle= "#e2faff";
+        ctx.fillRect(0,0,800,400);
         var title = new Image();
         title.src = "gametitle.png";
-      function drawTitle(){
         ctx.drawImage(title, 10, 10, 780, 100);
       };
       drawTitle();
